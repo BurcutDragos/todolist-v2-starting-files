@@ -183,7 +183,12 @@ res.render("list", { listTitle: "Work List", newListItems: workItems });
   res.render("about");
 });*/
 
-app.listen(3000, function() {
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
   mongoose.connect("mongodb+srv://dragosburcut:dragosburcut@cluster0.tr0mvwk.mongodb.net/todolistDB",
   {
     useUnifiedTopology: true,
