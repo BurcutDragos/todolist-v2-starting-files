@@ -9,9 +9,10 @@
   "author": "",
   "license": "ISC",
   "engines": {
-  "node": "19.7.0"
-},
+    "node": "19.7.0"
+  },
   "dependencies": {
+    "aws-sdk": "^2.1426.0",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
